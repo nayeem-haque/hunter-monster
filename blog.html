@@ -95,7 +95,47 @@
         </p>
     </div>
 
-
+    <div>
+        <h3>4. How many ways can we get undefined?</h3>
+        <p>
+            <span class="fw-bold ">Ans.</span> <br>
+            <span>Scenarios that create undefined - </span>
+            <br />
+            <span class="fw-bold">Uninitialized variable</span>
+            <br />
+            let myVariable; <br />
+            myVariable; // => undefined
+            <br />
+            <span class="fw-bold">Accessing a non-existing property</span>
+            <br />
+            let favoriteMovie = { title: 'Blade Runner' }; <br />
+            favoriteMovie.actors; // => undefined
+            <br />
+            <span class="fw-bold">Function parameters</span>
+            <br />
+            function multiply(a, b) { a; // => 5 b; // => undefined <br />
+            return a * b; } <br />
+            multiply(5); // => NaN
+            <br />
+            <span class="fw-bold">Function return value</span>
+            <br />
+            function square(x) { const res = x * x; } <br />
+            square(2); // => undefined
+            <br />
+            <span class="fw-bold">Void operator</span>
+            <br />
+            void 1; // => undefined void (false); // => undefined
+            <br />
+            void {name: 'John Smith'}; // => undefined
+            <br />
+            void Math.min(1, 3); // => undefined <br />
+            <span class="fw-bold">Undefined in arrays</span>
+            <br />
+            const colors = ['blue', 'white', 'red']; <br />
+            colors[5]; // => undefined <br />
+            colors[-1]; // => undefined <br />
+        </p>
+    </div>
 
 </body>
 
