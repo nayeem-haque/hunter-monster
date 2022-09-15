@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="">
+        <h3>
+            1. What are the differences between Local Storage & Session Storage?
+        </h3>
+        <p>
+            <span class="fw-bold">Ans:</span> <br>
+            <span class="fw-bold">Local Storage:</span>
+            Web storage can be viewed simplistically as an improvement on cookies, providing much greater storage
+            capacity. Available size is 5MB which considerably more space to work with than a typical 4KB cookie.
+            The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) -
+            reducing the amount of traffic between client and server.
+            The data stored in localStorage persists until explicitly deleted. Changes made are saved and available for
+            all current and future visits to the site. <br>
+            <span class="fw-bold">Session Storage:</span>
+            It is similar to localStorage.
+            Changes are only available per window (or tab in browsers like Chrome and Firefox). Changes made are saved
+            and available for the current page, as well as future visits to the site on the same window. Once the window
+            is closed, the storage is deleted
+            The data is available only inside the window/tab in which it was set.
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>
